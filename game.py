@@ -12,8 +12,8 @@ def scenario1():
     if response == 'yes':
         print("\nAlright, you have made your first choice. Let's begin.\n")
         print("\nThe year is 2038. You have led a very successful life, resulting in lots of wealth. You own a mansion in Los Angeles, a private jet, and a chain of successful Italian restaurants. Nothing can possibly happen that can make life any worse.\n")
-        print("\nYou are trying to expand your restaurant chain, Magnet Ristorante, overseas to Asia. The place you would like to start at is Cambodia, since you like Cambodian people. You take your private jet, and take off.\n")
-        print("\nYou are well into your flight, and you have dozed off. Suddenly, you are jerked awake by turbulence. You shake it off and go back to sleep. A few minutes later, it happens again. The pilot runs to the back, and tells you that the plane has been hit! The plane will soon crash on the island of Koror, in the country of Palau. He gives you two options: (1)Grab the parachute and jump off, or (2)wait until the plane hits the ground and comes to a complete stop. What will you do? (Type in the number that corresponds to your decision)\n\n")
+        print("\nYou are trying to expand your restaurant chain, Magnet Ristorante, overseas to Asia. The place you would like to start at is Cambodia, since you like Cambodian people. You have a meeting there tomorrow. You take your private jet, and take off.\n")
+        print("\nYou are well into your flight, and you have dozed off. Suddenly, you are jerked awake by turbulence. You shake it off and go back to sleep. A few minutes later, it happens again. The pilot runs to the back, and tells you that the plane has been hit! The plane will soon crash on the island of Koror, in the country of Palau. He gives you two options: (1)Grab the parachute and jump off, or (2)wait until the plane hits the ground and comes to a complete stop. What will you do? (Type in the number that corresponds to your decision, then press enter)\n\n")
     elif response == 'no':
         print_slow("\nI took all the time to make this game and you don't want to play? Shame on you.")
     else:
@@ -22,7 +22,7 @@ def scenario1():
 def scenario2():
     response2 = input()
     if response2 == '1':
-        print("\nCongratulations! You have made the right choice. If you had waited in the plane, you would have died for sure. What idiot would do that? Anyway, you have landed safely on a beach. The pilot is nowhere to be seen. You have found a few things in the backpack that contained the parachute. You find a machete, a compass, some water bottles, and a lighter. I guess your pilot knew that one day you would be abandoned on a tropical island in the middle of the Pacific Ocean. Smart man. Alas, you have come to another decision. What do you do next? Do you (1)stay put on this beach and start working on an SOS signal? Or do you (2)walk along the beach in hopes of passing a nearby village, with food, extra water, and a way to get back home? (Type in the number that corresponds to your decision)\n\n")
+        print("\nCongratulations! You have made the right choice. If you had waited in the plane, you would have died for sure. What idiot would do that? Anyway, you have landed safely on a beach. The pilot is nowhere to be seen. You have found a few things in the backpack that contained the parachute. You find a machete, a compass, some water bottles, and a lighter. I guess your pilot knew that one day you would be abandoned on a tropical island in the middle of the Pacific Ocean. Smart man. Alas, you have come to another decision. What do you do next? Do you (1)stay put on this beach and start working on an SOS signal? Or do you (2)walk along the beach in hopes of passing a nearby village, with food, extra water, and a way to get back home? (Type in the number that corresponds to your decision, then press enter)\n\n")
     elif response2 == '2':
         print_slow("\nYou fool! You stayed in the plane, only to spiral down to a painful death. Had you jumped out, you would have had a much better chance of surviving. You can try the adventure again if you wish. Try not to make the same mistake twice. Do you want to play again? (Answer 'yes' or 'no')")
     else:
@@ -52,7 +52,10 @@ def scenario4():
 def scenario5():
     response5 = input()
     if response5 == '1':
-        print("\nNice choice. Better safe than sorry. Energy needs to be expended wisely, and building a shelter for a potentially longer-than-expected stay is worth it.")
+        print("\nNice choice. Better safe than sorry. Energy needs to be expended wisely, and building a shelter for a potentially longer-than-expected stay is worth it. Would digging a shelter in the sand work? Definitely not, that would easily flood if high tide came in. A makeshift shelter on the sand will have to do. You grab some bamboo from the jungle, and some vine. You assemble the bottom of the shelter so that it is about 6 inches from the ground. This will definitely keep the bugs out, resulting in a much better night's sleep. The structure of the roof is also made up of bamboo, and completely covered with layers and layers of palm fronds, which will hopefully keep rain from getting in. You take a step back, and admire the work that you have done.\n")
+        print("\nAnother night goes by, and there are still no planes flying overhead. Food has become more and more scarce, and the water bottles that you have been living off of are going to soon run out. The day has come and gone, and you make your fire for the night, lay on your bamboo bed, and try to sleep. As you lay down, you start to wonder if getting off of this island is ever going to happen. Does your family even know what's happening? Do the Cambodians hate you now because you never showed up to the meeting? Thoughts scramble in your head, but soon diminish as you slowly fall asleep.\n")
+        print("\nSuddenly, you hear a faint chopping sound. Are you dreaming about the time you killed that shark? No, the sound isn't from a dream. It's getting louder and louder, almost like its coming towards you. You open your eyes, and peer outside your shelter. It's still night, so you can barely see anything. You climb out of the shelter and see a single light coming from the sky, right at you. A helicopter!\n")
+        print("\nThe helicopter lands on the edge of the beach. You sprint towards it, nearly tripping with every step. The pilot emerges, and out comes...")
     elif response5 =='2':
         print("\nYou just can't take it any longer...you need to get off of this beach. You decide to build three large fires, and a very large S-O-S written with branches. You go out into the trees that line the edge of the sand, and search for branches and firewood. There is not much wood on the ground, meaning you have to climb into trees to get most of it. You get a sufficient amount, but you just wasted lots of time and energy. There's enough wood for the fires, but not nearly enough to spell out S-O-S. You build the fires, light them, and wait. You wait...and wait...but no planes come. It is already dark, and you have no shelter. Do you (1)end it all, or (2)sleep on the bamboo you constructed earlier and try again tomorrow?\n\n")
     else:
@@ -67,7 +70,7 @@ def scenario6():
 
 
 # asks the player a question and their answer is assigned to the variable 'response'
-response = input("Hello, traveler. You are about to embark on a journey unlike any other. Would you like to begin? (Answer 'yes' or 'no')\n\n").lower()
+response = input("Hello, traveler. You are about to embark on a journey unlike any other. Would you like to begin? (Answer 'yes' or 'no' and then press enter)\n\n").lower()
 
 scenario1()
 scenario2()
