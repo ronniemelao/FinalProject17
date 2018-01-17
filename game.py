@@ -55,7 +55,9 @@ def scenario5():
         print("\nNice choice. Better safe than sorry. Energy needs to be expended wisely, and building a shelter for a potentially longer-than-expected stay is worth it. Would digging a shelter in the sand work? Definitely not, that would easily flood if high tide came in. A makeshift shelter on the sand will have to do. You grab some bamboo from the jungle, and some vine. You assemble the bottom of the shelter so that it is about 6 inches from the ground. This will definitely keep the bugs out, resulting in a much better night's sleep. The structure of the roof is also made up of bamboo, and completely covered with layers and layers of palm fronds, which will hopefully keep rain from getting in. You take a step back, and admire the work that you have done.\n")
         print("\nAnother night goes by, and there are still no planes flying overhead. Food has become more and more scarce, and the water bottles that you have been living off of are going to soon run out. The day has come and gone, and you make your fire for the night, lay on your bamboo bed, and try to sleep. As you lay down, you start to wonder if getting off of this island is ever going to happen. Does your family even know what's happening? Do the Cambodians hate you now because you never showed up to the meeting? Thoughts scramble in your head, but soon diminish as you slowly fall asleep.\n")
         print("\nSuddenly, you hear a faint chopping sound. Are you dreaming about the time you killed that shark? No, the sound isn't from a dream. It's getting louder and louder, almost like its coming towards you. You open your eyes, and peer outside your shelter. It's still night, so you can barely see anything. You climb out of the shelter and see a single light coming from the sky, right at you. A helicopter!\n")
-        print("\nThe helicopter lands on the edge of the beach. You sprint towards it, nearly tripping with every step. The pilot emerges, and out comes...")
+        print("\nThe helicopter lands on the edge of the beach. You sprint towards it, nearly tripping with every step. The pilot emerges, and out comes...Jeff Probst?\n")
+        print('\nThis is what he says: "I will ask you 10 questions about the TV show Survivor. If you get all ten right, then I will fly you to Cambodia so you can attend your meeting. If you do not succeed, then you will stay on this beach, possibly forever.\n')
+        print("\nQuestion 1: Who was the first winner of Survivor? (A) Richard     (B) Tyson     (C) Ben     (D) Earl\n")
     elif response5 =='2':
         print("\nYou just can't take it any longer...you need to get off of this beach. You decide to build three large fires, and a very large S-O-S written with branches. You go out into the trees that line the edge of the sand, and search for branches and firewood. There is not much wood on the ground, meaning you have to climb into trees to get most of it. You get a sufficient amount, but you just wasted lots of time and energy. There's enough wood for the fires, but not nearly enough to spell out S-O-S. You build the fires, light them, and wait. You wait...and wait...but no planes come. It is already dark, and you have no shelter. Do you (1)end it all, or (2)sleep on the bamboo you constructed earlier and try again tomorrow?\n\n")
     else:
@@ -67,6 +69,69 @@ def scenario6():
         print("\nUnsurprisingly, the better choice. You were going to die anyway by falling into one of the fires that you made. This way, you don't have to die a painful death. You can try the adventure again if you wish. Try not to make the same mistake twice.")
     elif response6 == '2':
         print("\nYesterday really took a toll on your body. After working all day gathering wood, and then getting barely any sleep again, you have almost no energy. Going out and retrieving food is too much work. Maybe if you build a fire, you will be rejuvenated and you can find the strength to survive. You assemble a fire using the excess wood from yesterday, and use your lighter to light it. The fire quickly ignites, and a burst of smoke quickly rises. Having very little energy, you do not react in time, and you breathe in the smoke, causing you to pass out...right on top of the fire. Your body is burning, and the pain just keeps intensifying, but you don't have the strength to move, or even scream. You lay there, in the fire, as you are burned to death. You can try the adventure again if you wish. Try not to make the same mistake twice.")
+
+
+def scenario7():
+    response7 = input().lower
+    if response7 == 'A':
+        print("\nThat one was easy. Question 2: What was the name of the 24th season of Survivor? (A) Survivor: Philippines      (B) Survivor: South Pacific      (C) Survivor: One World      (D) Survivor: Redemption Island\n")
+    else:
+        print("\nWRONG!!!! Jeff Probst left, you were stuck on the island for one more day, and you died. You can try the adventure again if you wish. Try not to make the same mistake twice.")
+
+def scenario8():
+    response8 = input().lower
+    if response8 == 'C':
+        print("\nAnother easy one. Question 3: What was the brand new twist featured in Survivor: Panama? (A) Exile Island      (B) Legacy Advantage      (C) Tribe Swap      (D) Returning Players\n")
+    else:
+        print("\nWRONG!!!! Jeff Probst left, you were stuck on the island for one more day, and you died. You can try the adventure again if you wish. Try not to make the same mistake twice.")
+
+
+def scenario9():
+    response9 = input().lower
+    if response9 == 'A':
+        print("\nIf you hadn't noticed yet, these are getting slightly harder. Question 4: Who was the 2nd member of the Jury in Survivor: China?  (A) Jaime Dugan     (B) Frosti Zernow      (C) James Clement      (D) Jean-Robert Bellande\n")
+    else:
+        print("\nWRONG!!!! Jeff Probst left, you were stuck on the island for one more day, and you died. You can try the adventure again if you wish. Try not to make the same mistake twice.")
+
+def scenario10():
+    response10 = input().lower
+    if response10 == 'D':
+        print("\nCorrect, again. Question 5: In which season was the Hidden Immunity Idol first revealed? (A) Survivor: Fiji     (B) Survivor: Guatemala     (C) Survivor: Borneo     (D) Survivor: Panama\n")
+    else:
+        print("\nWRONG!!!! Jeff Probst left, you were stuck on the island for one more day, and you died. You can try the adventure again if you wish. Try not to make the same mistake twice.")
+
+def scenario11():
+    response11 = input().lower
+    if response11 == 'B':
+        print("\nHalfway to survival! Question 6: What is the name of the main theme song of Survivor? (A) Ancient Voices      (B) Survivant      (C) 'Survivor' Theme Song      (D) Tribal Dance\n")
+    else:
+        print("\nWRONG!!!! Jeff Probst left, you were stuck on the island for one more day, and you died. You can try the adventure again if you wish. Try not to make the same mistake twice.")
+
+def scenario12():
+    response12 = input().lower
+    if response12 == 'A':
+        print("\nAncient Voices is right! Question 7: Who made the infamous 'Snakes and Rats' speech? (A) Jan Gentry      (B) Sue Hawk       (C) Kathy Vavrick-O'Brien      (D) Heidi Strobel\n")
+    else:
+        print("\nWRONG!!!! Jeff Probst left, you were stuck on the island for one more day, and you died. You can try the adventure again if you wish. Try not to make the same mistake twice.")
+
+def scenario13():
+    response13 = input().lower
+    if response13 == 'B':
+        print("\nCorrect! You won't be able to get the next three correct by just Googling it. Good luck. Question 8: How many contestants from Survivor: Kaôh Rōng have returned? (A) 1       (B) 2      (C) 3      (D) 4\n")
+    else:
+        print("\nWRONG!!!! Jeff Probst left, you were stuck on the island for one more day, and you died. You can try the adventure again if you wish. Try not to make the same mistake twice.")
+
+def scenario14():
+    response14 = input().lower
+    if response14 == 'D':
+        print("\nGood job. 2 more questions, and you'll survive. Question 9:\n")
+    else:
+        print("\nWRONG!!!! Jeff Probst left, you were stuck on the island for one more day, and you died. You can try the adventure again if you wish. Try not to make the same mistake twice.")
+
+def scenario15():
+    response15 = input().lower
+    if response15 == 'B':
+        print("\nOne more question! Question 10: How many times has a season of Survivor been located in Brazil? (A) 1      (B) 2      (C) 3    (D) 4\n")
 
 
 # asks the player a question and their answer is assigned to the variable 'response'
