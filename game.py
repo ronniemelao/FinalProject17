@@ -6,14 +6,19 @@ def print_slow(str):
     for letter in str:
         sys.stdout.write(letter)
         sys.stdout.flush()
-        time.sleep(0.0007)
+        time.sleep(0.07)
 
 def scenario1():
     """introduction to game and first choice"""
     if response == 'yes':
         print_slow("\nAlright, you have made your first choice. Let's begin.\n")
+# program pauses for 2 seconds
+        time.sleep(2)
         print_slow("\nThe year is 2038. You have led a very successful life, resulting in lots of wealth. You own a mansion in Los Angeles, a private jet, and a chain of successful Italian restaurants. Nothing can possibly happen that can make life any worse.\n")
+# program pauses for 1 second
+        time.sleep(1)
         print_slow("\nYou are trying to expand your restaurant chain, Magnet Ristorante, overseas to Asia. The place you would like to start at is Cambodia, since you enjoy cultural Cambodian cuisine, especially balut. You have a meeting there tomorrow. You take your private jet, and take off.\n")
+        time.sleep(1)
         print_slow("\nYou are well into your flight, and you have dozed off. Suddenly, you are jerked awake by turbulence. You shake it off and go back to sleep. A few minutes later, it happens again. The pilot runs to the back, and tells you that the plane has been hit! The plane will soon crash on the island of Koror, in the country of Palau. He gives you two options: (1) Grab the parachute and jump off, or (2) wait until the plane hits the ground and comes to a complete stop. What will you do? (Type in the number that corresponds to your decision, then press enter)\n\n")
         scenario2()
     elif response == 'no':
@@ -38,11 +43,13 @@ def scenario3():
     response3 = input()
     if response3 == '1':
         print_slow("\nYou have decided to stay on the beach. A fire is now your best bet, since it can act as an SOS and you can cook any food that you find. Hopefully a plane will fly by soon and extra food won't be necessary, but risking that is not in your best interest right now. You gather some wood, and use your lighter to make a fire. You scour the beach for anything remotely edible. There are mainly oysters and clams, which aren't of much interest to you. Many hours pass by, the sun sets, and you finally give up on being rescued today. You could be out there for days, or even weeks, and you need to get some sleep. A shelter is necessary. For now, you grab some bamboo stalks, lay them on the sand, tie them together with some vines. It's next to nothing, but at least it will keep the bugs out.\n")
+        time.sleep(1)
         print_slow("\nAfter sleeping maybe 1 or 2 hours all night, morning finally comes. The first thing on your mind––food. Out in the clear, blue ocean, about 20-30 yards out, you see a fin zig-zagging back and forth. A SHARK! After starving all day, this could be the big boost of protein that you have needed. However, a shark can also potentially be very dangerous. Do you (1) try to catch the shark, or (2) stick to eating oysters and clam?\n\n")
         scenario4()
     elif response3 == '2':
-        print_slow("\nWalking along the beach is a good option. There could be a town or village that you could possibly use to get off of this island and to Cambodia. You walk for an hour, and you are already fatiguing. The backpack seems to get heavier with every step, and your confidence is lowering. Will you ever get off of the island? I guess we'll find out. All you can do now is just continue walking and hope for the best.\n")
-        print_slow("\nAnother hour passes, and you start to hear a faint yelling noise. You consider yourself crazy and continue walking. You hear it again, only louder. This is hope. You start to sprint towards the sound, and it only grows louder and louder. You make a sharp left into the jungle. You come across a clearing and are immediately stunned. In the opening, there are at least 100 people, dancing and singing: men wearing strands of a skirt with a headdress, and women wearing long, colorful dresses with nothing covering their top. This is a Palauan tribe. Hundreds of eyes are glaring right at you, and you have no idea what will happen. Should you (1) run away in case they attack you, or (2) walk in and greet them?\n")
+        print_slow("\nWalking along the beach is a good option. There could be a town or village that you could possibly use to get off of this island and to Cambodia. You walk for an hour, and you are already fatiguing. The backpack seems to get heavier with every step, and you have little confidence. Will you ever get off of the island? I guess we'll find out. All you can do now is just continue walking and hope for the best.\n")
+        time.sleep(1)
+        print_slow("\nAnother hour passes, and you start to hear a faint yelling noise. You consider yourself crazy and continue walking. You hear it again, only louder. This is hope. You start to sprint towards the sound, and it only grows louder and louder. You make a sharp left into the jungle. You come across a clearing and are immediately stunned. In the opening, there are at least 100 people, dancing and singing: men wearing strands of a skirt with a headdress, and women wearing long, colorful dresses with nothing covering their top. This is a Palauan tribe. Hundreds of eyes are glaring right at you, and you have no idea what will happen. Should you (1) run away in case they attack you, or (2) walk in and greet them?\n\n")
         scenario8()
     else:
         print_slow("\nIs it really that hard to follow directions? I said to type '1' or '2'! You can try the adventure again if you wish. Try not to make the same mistake twice.")
@@ -59,6 +66,7 @@ def scenario4():
         scenario7()
     elif response4 == '2':
         print_slow("\nYou just passed up a large chunk of meat and your best shot at surviving. As it sadly turns out, that shark would have been the best meal you could have possibly gotten on this beach. Since you didn't catch it, you're living on only clams and oysters, which provide very little energy. With a lack of energy, you wonder if you will ever leave this island. Finally, with no energy or will to live anymore, you expire on the beach. You can try the adventure again if you wish. Try not to make the same mistake twice.")
+        time.sleep(1)
         print_slow("\nSometimes the more fun option is also the better option. You can try the adventure again if you wish. Try not to make the same mistake twice.")
     else:
         print_slow("\nIs it really that hard to follow directions? I said to type '1' or '2'! You can try the adventure again if you wish. Try not to make the same mistake twice.")
@@ -67,11 +75,15 @@ def scenario4():
 def scenario5():
     """intro to Survivor questions"""
     print_slow("\nNice choice. Better safe than sorry. Energy needs to be expended wisely, and building a shelter for a potentially longer-than-expected stay is worth it. Would digging a shelter in the sand work? Definitely not, that would easily flood if high tide came in. A makeshift shelter on the sand will have to do. You grab some bamboo from the jungle, and some vine. You assemble the bottom of the shelter so that it is about 6 inches from the ground. This will definitely keep the bugs out, resulting in a much better night's sleep. The structure of the roof is also made up of bamboo, and completely covered with layers and layers of palm fronds, which will hopefully keep rain from getting in. You take a step back, and admire the work that you have done.\n")
+    time.sleep(1)
     print_slow("\nAnother night goes by, and there are still no planes flying overhead. Food has become more and more scarce, and the water bottles that you have been living off of are going to soon run out. The day has come and gone, and you make your fire for the night, lay on your bamboo bed, and try to sleep. As you lay down, you start to wonder if getting off of this island is ever going to happen. Does your family even know what's happening? Do the Cambodians hate you now because you never showed up to the meeting? Thoughts scramble in your head, but soon diminish as you slowly fall asleep.\n")
+    time.sleep(2)
     print_slow("\nSuddenly, you hear a faint chopping sound. Are you dreaming about the time you killed that shark? No, the sound isn't from a dream. It's getting louder and louder, almost like its coming towards you. You open your eyes, and peer outside your shelter. It's still night, so you can barely see anything. You climb out of the shelter and see a single light coming from the sky, right at you. A helicopter!\n")
+    time.sleep(1)
     print_slow("\nThe helicopter lands on the edge of the beach. You sprint towards it, nearly tripping with every step. The pilot emerges, and out comes...Jeff Probst , host of the TV show Survivor?\n")
     time.sleep(2)
     print_slow('\nThis is what he says: "I will ask you 10 questions about the TV show Survivor. If you get all ten right, then I will fly you to Cambodia so you can attend your meeting. If you do not succeed, then you will stay on this beach, possibly forever. I will give you this iPhone 20 to assist you, which means you may use the internet. Good luck. \n')
+    time.sleep(1)
     print_slow("\nQuestion 1: \n")
     survivor_questions()
 
@@ -140,6 +152,7 @@ def survivor_questions():
             print()
             name = input().title()
             print_slow(f"\nIt has been a long journey, {name}. It is time for you to go.\n")
+            time.sleep(1)
             print_slow("As the helicopter flies overhead, you peek down at the beach that you have called your home for the past several days. You can see the makeshift shelter that kept you from the bugs and rain. You can also spot the waters where you killed the shark that kept you alive. This has been a once-in-a-lifetime experience, but you're just glad it's over. You may try the adventure again, and choose a different path.")
             break
 # provides a different response to each answer the player gets correct
@@ -196,11 +209,12 @@ def scenario8():
     """choice whether to run away from Palauan tribe or greet them is decided"""
     response8 = input()
     if response8 == '1':
-        print_slow("\nYou bolt out of there as quickly as you can. Messing with uncivilized people like that is a good way to get killed. Anyway, you are trying to find a town or village, not a tribe camp. So, you continue to walk along the beach in hopes of finding rescue. However, there is no rescue. You walk all day, and when night comes, you are spent. Maybe settling down and starting a fire is your best bet. Do you (1) risk not finding a village and try to survive on your own? Or (2) risk dying from exhaustion and keep walking?\n")
+        print_slow("\nYou bolt out of there as quickly as you can. Messing with uncivilized people like that is a good way to get killed. Anyway, you are trying to find a town or village, not a tribe camp. So, you continue to walk along the beach in hopes of finding rescue. However, there is no rescue. You walk all day, and when night comes, you are spent. Maybe settling down and starting a fire is your best bet. Do you (1) risk not finding a village and try to survive on your own? Or (2) risk dying from exhaustion and keep walking?\n\n")
         scenario9()
     elif response8 == '2':
         print_slow("\nWell...here goes nothing. You start walking towards the tribe, and none of them move. It's as if you have froze time. Suddenly, everyone start shrieking and stomping at once. Two men come out from the crowd of them, right at you. You close your eyes, and hope they don't torture you to your death. Instead, they put a necklace around your head. It has long orange spiral shells on it, and wooden pieces with faces carved into them. It must be very important, as everybody starts chanting once it falls on your shoulders. The Palauan men lift you off of your feet, and put you on what seems to be a throne. 'Is this for real? Am I their king?' Thoughts scramble through your head, and they bring you into a hut.\n")
-        print_slow("\nAs they bring you into the hut, the necklace's shells start to dig into your chest, making it very uncomfortable. Should you (1) take it off or (2) just leave it on, because it seems pretty important?\n")
+        time.sleep(1)
+        print_slow("\nAs they bring you into the hut, the necklace's shells start to dig into your chest, making it very uncomfortable. Should you (1) take it off or (2) just leave it on, because it seems pretty important?\n\n")
         scenario10()
     else:
         print_slow("\nIs it really that hard to follow directions? I said to type '1' or '2'! You can try the adventure again if you wish. Try not to make the same mistake twice.")
@@ -221,8 +235,14 @@ def scenario10():
     if response10 == '1':
         print_slow("\nYou fool! That necklace kept you immune from being overthrown as leader and killed. So, once the burly men realized that it was off of you, they executed you immediately. You can try the adventure again if you wish. Try not to make the same mistake twice.")
     elif response10 == '2':
-        print_slow("\nSmart decision. That necklace keeps you immune from being overthrown as leader and killed. The men carry you into the hut, and set your throne down. Another man comes in the hut, dressed in much more elegant clothing than all the others. He kneels down in front of you, and pulls out what seems to be just a stick. He mumbles a prayer, kisses it, and hands it to you. You inspect it, and it really seems to be just a stick. Hm. You are risen once again by the men, and carried out of the hut to the center of the tribe's camp. In the center is a large circle filled with water. Above the water is a torch, hanging by a string. As you approach the water, the entire tribe circles it, and starts cheering. 'Are they about to drown me??'\n")
-        print_slow("\nJust when you think you are about to die (again), the men set you down. The cheering dies down, but everyone is still staring at you. 'What am I supposed to do?' The man on your right points to your hand. The stick? Really? You really want me to throw the stick in the water? Or just hand it to you? Do you (1) throw the stick into the water, or (2) give it to the man?\n")
+        print_slow("\nSmart decision. That necklace keeps you immune from being overthrown as leader and killed. The men carry you into the hut, and set your throne down. Another man comes in the hut, dressed in much more elegant clothing than all the others. He kneels down in front of you, and pulls out what seems to be just a stick. He mumbles a prayer, kisses it, and hands it to you. You inspect it, and it really seems to be just a stick.")
+# program pauses for 2 seconds
+        time.sleep(2)
+        print_slow(' Hm. ')
+        time.sleep(2)
+        print_slow("You are risen once again by the men, and carried out of the hut to the center of the tribe's camp. In the center is a large circle filled with water. Above the water is a torch, hanging by a string. As you approach the water, the entire tribe circles it, and starts cheering. 'Are they about to drown me??'\n")
+        time.sleep(1)
+        print_slow("\nJust when you think you are about to die (again), the men set you down. The cheering dies down, but everyone is still staring at you. 'What am I supposed to do?' The man on your right points to your hand. The stick? Really? You really want me to throw the stick in the water? Or just hand it to you? Do you (1) throw the stick into the water, or (2) give it to the man?\n\n")
         scenario11()
     else:
         print_slow("\nIs it really that hard to follow directions? I said to type '1' or '2'! You can try the adventure again if you wish. Try not to make the same mistake twice.")
@@ -240,8 +260,11 @@ def scenario11():
 def scenario12():
     """introduction to Palau questions"""
     print_slow("\nThe man on your left gives you a cube. Four sides say 'A', 'B', 'C', and 'D', and the other two sides say 'True' and 'False'. Wait a minute. Do these people know English? As you ponder that thought, the man who had kissed the stick earlier emerges from the crowd.\n")
+    time.sleep(1)
     print_slow("\n'Hello, young traveler. I see that you are lost, and are trying to find your way home. I can help you with that, but you will have to answer these 6 questions about Palau. Each time you get a question wrong, the torch that is hanging above the water will drop. Get three questions wrong, the torch will fall into the water, and you lose. If you succeed, I will lead you home. Ready to play?'\n")
+    time.sleep(2)
     print_slow("\n'Wait, WHAT?!? You could speak English this whole time? Oh well, I guess I'll play.'\n")
+    time.sleep(1)
     print_slow("\n'Question 1: '\n")
     palau_questions()
 
@@ -293,7 +316,9 @@ def palau_questions():
 # player answers all 6 questions with 2 mistakes or less, then x=7, and they win
         if x == 7:
             print_slow("\n'Congratulations! You have successfully avoided letting your torch hit the water. Come with me, I will lead you home.'\n")
+            time.sleep(1)
             print_slow("\nYou're having a really tough time believing this guy, but he's your only way to get to Cambodia. You follow him out of the tribe camp and into another clearing. Inside the clearing...a private jet?!\n")
+            time.sleep(1)
             print_slow("\n'So you can speak English and you own a private jet, but you wouldn't let me leave unless I answered your trivia questions?'\n")
 # pauses program for 3 seconds
             time.sleep(3)
