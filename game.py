@@ -2,11 +2,11 @@
 import sys,time
 
 def print_slow(str):
-    """every character in a string displays every 70 milliseconds"""
+    """every character in a string displays every 40 milliseconds"""
     for letter in str:
         sys.stdout.write(letter)
         sys.stdout.flush()
-        time.sleep(0.07)
+        time.sleep(0.04)
 
 def scenario1():
     """introduction to game and first choice"""
@@ -133,6 +133,11 @@ survivor_questions_list = [
 
     ]
 
+class Player(object):
+
+    def __init__(self, name):
+        self.name = name
+
 def survivor_questions():
     """enables player to answer questions about Survivor"""
 
@@ -149,11 +154,10 @@ def survivor_questions():
 # if player answers all 10 questions correctly, x=11, and they win
         if x == 11:
             print_slow('\nCONGRATULATIONS! You have completed your final challenge, and you will now be able to leave the island. What is your name, young traveler?\n')
-            print()
-            name = input().title()
-            print_slow(f"\nIt has been a long journey, {name}. It is time for you to go.\n")
+            player = Player(input().title())
+            print_slow(f"\nIt has been a long journey, {player.name}. It is time for you to go.\n")
             time.sleep(1)
-            print_slow("As the helicopter flies overhead, you peek down at the beach that you have called your home for the past several days. You can see the makeshift shelter that kept you from the bugs and rain. You can also spot the waters where you killed the shark that kept you alive. This has been a once-in-a-lifetime experience, but you're just glad it's over. You may try the adventure again, and choose a different path.")
+            print_slow("\nAs the helicopter flies overhead, you peek down at the beach that you have called your home for the past several days. You can see the makeshift shelter that kept you from the bugs and rain. You can also spot the waters where you killed the shark that kept you alive. This has been a once-in-a-lifetime experience, but you're just glad it's over. You may try the adventure again, and choose a different path.")
             break
 # provides a different response to each answer the player gets correct
         elif their_answer in correct_answer:
